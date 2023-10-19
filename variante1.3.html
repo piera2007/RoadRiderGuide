@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Road-Rider-Guide</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // JavaScript-Funktion, um Motorradtypen basierend auf    dem Alter auszuwählen
+    function updateMotorradTypen() {
+      var alter = document.getElementById("alter").value;
+      var motorradTypSelect = document.getElementById("motorrad-typ");
+      
+    
+
+      if (alter === "15-17") {
+        // Nur 50ccm und 125ccm anzeigen
+        var option50ccm = document.createElement("option");
+        option50ccm.value = "50ccm";
+        option50ccm.text = "50ccm Motorrad";
+        motorradTypSelect.add(option50ccm);
+
+        var option125ccm = document.createElement("option");
+        option125ccm.value = "125ccm";
+        option125ccm.text = "125ccm Motorrad";
+        motorradTypSelect.add(option125ccm);
+      } else if (alter === "18-50+") {
+        // Alle verfügbaren Motorradtypen anzeigen
+        var motorradTypen = ["sportler", "motocross / trial", "supermoto", "enduro", "naked-bike", "touring", "roller", "chopper", "custom Bike", "gespanne"];
+        for (var i = 0; i < motorradTypen.length; i++) {
+          var option = document.createElement("option");
+          option.value = motorradTypen[i];
+          option.text = motorradTypen[i];
+          motorradTypSelect.add(option);
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="fade-in-up">
+    <a href="index.html">
+      <div class="logo">
+        <img src="images/Road-Rider-Guide.png" alt="Road Rider Guide Logo" class="logo-img" />
+      </div>
+    </a>
+    <div class="titel">
+      <h1>Willkommen bei Road-Rider-Guide</h1>
+      Wir führen Sie zu Ihrem perfekten Motorrad!
+    </div>
+  </header>
+  <nav>
+    <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="about.html">Über uns</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+        <li><a href="sponsor.html">Sponsoren</a></li>
+        <li><a href="match.html">Passendes Motorrad</a></li>
+
+    </ul>
+</nav>
+<main>
+    <section>
+        <h2>Über Uns</h2>
+        <p>Wir sind ein tolles Unternehmen!</p>
+    </section>
+    <section>
+        <h2>Kontakt</h2>
+        <p>Kontaktiere uns unter kontakt@meinunternehmen.com</p>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2023 Mein Unternehmen</p>
+</footer>
+
+  <main>
+    <h2>Entdecken Sie Ihr passendes Motorrad:</h2>
+    <form>
+      <label for="alter">Schritt 1: Wie alt sind Sie?</label>
+      <select name="alter" id="alter" onchange="updateMotorradTypen();">
+        <option value="-">-</option>
+        <option value="15-17">15-17 Jahre</option>
+        <option value="18-50+">18-50+ Jahre</option>
+      </select>
+
+      <label for="motorrad-typ">Schritt 2: Welche Art von Motorrad bevorzugen Sie?</label>
+      <select name="motorrad-typ" id="motorrad-typ">
+        <!-- Optionen werden von JavaScript aktualisiert -->
+      </select>
+
+      <input type="submit" value="Finden Sie Ihr Abenteuer" />
+    </form>
+  </main>
+
+  <section>
+    <h2>Über Road-Rider-Guide</h2>
+    <p>
+      Bei Road-Rider-Guide sind wir leidenschaftliche Motorradenthusiasten mit
+      jahrzehntelanger Erfahrung auf der Straße. Unser Ziel ist es, Ihre
+      Motorradträume wahr werden zu lassen, egal ob Sie ein Anfänger oder ein
+      erfahrener Fahrer sind. Wir bieten maßgeschneiderte Beratung und
+      empfehlen das ideale Motorrad für Sie, basierend auf Ihrem Alter, Ihren
+      Vorlieben und Ihrem Fahrstil.
+    </p>
+    <p>
+      Unsere Beratungsdienste sind darauf ausgerichtet, Ihre Sicherheit und
+      Freude am Fahren zu maximieren. Verlassen Sie sich auf uns, um Sie auf
+      den richtigen Weg zu bringen, sei es für entspannte Wochenendausflüge
+      oder anspruchsvolle Langstreckentouren.
+    </p>
+    <p>
+      Bereit, Ihr Abenteuer zu beginnen? Starten Sie Ihre Reise noch heute und
+      finden Sie heraus, welches Motorrad am besten zu Ihnen passt!
+    </p>
+  </section>
+</body>
+</html>

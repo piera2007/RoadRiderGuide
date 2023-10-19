@@ -45,9 +45,9 @@ footer {
     width: 100%;
 }
 
-#sponsor {
+#variante11 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     max-width: 1000px;
     margin: 0 auto;

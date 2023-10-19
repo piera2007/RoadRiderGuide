@@ -16,7 +16,7 @@
         }
 
         var motorradTypen = [
-          "Sportler",
+          "Strasse",
           "Motocross / Trial",
           "Supermoto",
           "Enduro",
@@ -64,84 +64,104 @@
     </nav>
 
     <main>
-        <h2>Entdecken Sie Ihr passendes Motorrad:</h2>
-        <form onsubmit="return redirectToAdventurePage();">
-          <label for="alter">Schritt 1: Wie alt sind Sie?</label>
-          <select name="alter" id="alter" onchange="updateMotorradTypen();">
-            <option value="-">-</option>
-            <option value="15-17">15-17 Jahre</option>
-            <option value="18+">18+ Jahre</option>
-          </select>
-          <br />
+      <h2>Entdecken Sie Ihr passendes Motorrad:</h2>
+      <form onsubmit="return redirectToAdventurePage();">
+        <label for="alter">Schritt 1: Wie alt sind Sie?</label>
+        <select name="alter" id="alter" onchange="updateMotorradTypen();">
+          <option value="-">-</option>
+          <option value="15-17">15-17 Jahre</option>
+          <option value="18+">18+ Jahre</option>
+        </select>
+        <br />
 
-          <label for="motorrad-typ">Schritt 3: Welche Art von Motorrad bevorzugen Sie?</label>
-          <select name="motorrad-typ" id="motorrad-typ"></select>
+        <label for="motorrad-typ"
+          >Schritt 3: Welche Art von Motorrad bevorzugen Sie?</label
+        >
+        <select name="motorrad-typ" id="motorrad-typ"></select>
 
         <input type="submit" value="Finden Sie Ihr Abenteuer" />
       </form>
+      <a href="variante1.1.html" id="variante1.1-link"></a>
+      <a href="variante1.2.html" id="variante1.2-link"></a>
+      <a href="variante1.3.html" id="variante1.3-link"></a>
+      <a href="variante1.4.html" id="variante1.4-link"></a>
+      <a href="variante1.5.html" id="variante1.5-link"></a>
+      <a href="variante1.6.html" id="variante1.6-link"></a>
+      <a href="variante1.7.html" id="variante1.7-link"></a>
+      <a href="variante1.8.html" id="variante1.8-link"></a>
+      <a href="variante1.9.html" id="variante1.9-link"></a>
+      <a href="variante1.10.html" id="variante1.10-link"></a>
+      <a href="variante2.1.html" id="variante2.1-link"></a>
+      <a href="variante2.2.html" id="variante2.2-link"></a>
+      <a href="variante2.3.html" id="variante2.3-link"></a>
+      <a href="variante2.4.html" id="variante2.4-link"></a>
+      <a href="variante2.5.html" id="variante2.5-link"></a>
+      <a href="variante2.6.html" id="variante2.6-link"></a>
+      <a href="variante2.7.html" id="variante2.7-link"></a>
+      <a href="variante2.8.html" id="variante2.8-link"></a>
+      <a href="variante2.9.html" id="variante2.9-link"></a>
+      <a href="variante2.10.html" id="variante2.10-link"></a>
     </main>
     <footer>
       <p>&copy; 2023 Road-Rider-Guide</p>
     </footer>
     <script>
-        function redirectToAdventurePage() {
-          var alter = document.getElementById("alter").value;
-          var motorradTyp = document.getElementById("motorrad-typ").value;
-          var redirectURL = "standard_abenteuerseite.html"; // Standardweiterleitung
+      function redirectToAdventurePage() {
+        var alter = document.getElementById("alter").value;
+        var motorradTyp = document.getElementById("motorrad-typ").value;
+        var redirectURL = "standard_abenteuerseite.html"; // Standardweiterleitung
 
-           // Definieren Sie hier die URLs für spezielle Kombinationen
-        if (alter === "15-17" && motorradTyp === "Sportler") {
+        // Definieren Sie hier die Links für spezielle Kombinationen
+        if (alter === "15-17" && motorradTyp === "Strasse") {
           redirectURL = "variante1.1.html";
         } else if (alter === "15-17" && motorradTyp === "Motocross / Trial") {
-          redirectURL = "variante1.2-17.html";
-        } else if (alter === "15-17" && motorradTyp === "Motocross / Trial") {
+          redirectURL = "variante1.2.html";
+        } else if (alter === "15-17" && motorradTyp === "Supermoto") {
           redirectURL = "variante1.3.html";
-        } else if (alter === "15-17" && motorradTyp === "Motocross / Trial") {
+        } else if (alter === "15-17" && motorradTyp === "Enduro") {
           redirectURL = "variante1.4.html";
-        } else if (alter === "15-17" && motorradTyp === "Motocross / Trial") {
+        } else if (alter === "15-17" && motorradTyp === "Naked-Bike") {
           redirectURL = "variante1.5.html";
-        } else if (alter === "15-17" && motorradTyp === "Motocross / Trial") {
+        } else if (alter === "15-17" && motorradTyp === "Touring") {
           redirectURL = "variante1.6.html";
-        } else if (alter === "15-17" && motorradTyp === "Motocross / Trial") {
+        } else if (alter === "15-17" && motorradTyp === "Roller") {
           redirectURL = "variante1.7.html";
-        } else if (alter === "15-17" && motorradTyp === "Motocross / Trial") {
+        } else if (alter === "15-17" && motorradTyp === "Chopper") {
           redirectURL = "variante1.8.html";
-        } else if (alter === "15-17" && motorradTyp === "Motocross / Trial") {
+        } else if (alter === "15-17" && motorradTyp === "Custom Bike") {
           redirectURL = "variante1.9.html";
-        } else if (alter === "15-17" && motorradTyp === "Motocross / Trial") {
+        } else if (alter === "15-17" && motorradTyp === "Gespanne") {
           redirectURL = "variante1.10.html";
-        } else if (alter === "15-17" && motorradTyp === "Motocross / Trial") {
+        } else if (alter === "18+" && motorradTyp === "Strasse") {
           redirectURL = "variante2.1.html";
-        } else if (alter === "15-17" && motorradTyp === "Motocross / Trial") {
+        } else if (alter === "18+" && motorradTyp === "Motocross / Trial") {
           redirectURL = "variante2.2.html";
-        } else if (alter === "15-17" && motorradTyp === "Motocross / Trial") {
-          redirectURL = "variante2..html";
-        } else if (alter === "15-17" && motorradTyp === "Motocross / Trial") {
+        } else if (alter === "18+" && motorradTyp === "Supermoto") {
+          redirectURL = "variante2.3.html";
+        } else if (alter === "18+" && motorradTyp === "Enduro") {
           redirectURL = "variante2.4.html";
-        } else if (alter === "15-17" && motorradTyp === "Motocross / Trial") {
+        } else if (alter === "18+" && motorradTyp === "Naked-Bike") {
           redirectURL = "variante2.5.html";
-        } else if (alter === "15-17" && motorradTyp === "Motocross / Trial") {
+        } else if (alter === "18+" && motorradTyp === "Touring") {
           redirectURL = "variante2.6.html";
-        } else if (alter === "15-17" && motorradTyp === "Motocross / Trial") {
+        } else if (alter === "18+" && motorradTyp === "Roller") {
           redirectURL = "variante2.7.html";
-        } else if (alter === "15-17" && motorradTyp === "Motocross / Trial") {
+        } else if (alter === "18+" && motorradTyp === "Chopper") {
           redirectURL = "variante2.8.html";
-        } else if (alter === "15-17" && motorradTyp === "Motocross / Trial") {
+        } else if (alter === "18+" && motorradTyp === "Custom Bike") {
           redirectURL = "variante2.9.html";
-        } else if (alter === "15-17" && motorradTyp === "Motocross / Trial") {
+        } else if (alter === "18+" && motorradTyp === "Gespanne") {
           redirectURL = "variante2.10.html";
-        } else if (alter === "15-17" && motorradTyp === "Motocross / Trial") {
-          redirectURL = "variante2.2.html";
         }
-        
+
         // Fügen Sie weitere Kombinationen hinzu, wie benötigt
 
-        // Weiterleitung zur ausgewählten URL
+        // Verwenden von Links zur Weiterleitung anstelle von window.location.href
         window.location.href = redirectURL;
 
         // Die Formularübermittlung verhindern, um die Standardaktion zu blockieren
         return false;
       }
-      </script>
+    </script>
   </body>
 </html>
