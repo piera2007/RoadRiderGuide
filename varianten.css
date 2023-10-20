@@ -56,6 +56,7 @@ footer {
     gap: 1rem;
     max-width: 1000px;
     margin: 0 auto;
+    background-color: #ffffffcc;
 }
 
 figure {
@@ -118,6 +119,7 @@ body {
     background-size: contain;
     background-position: center center; 
     background-attachment: fixed; 
+    background-repeat: no-repeat;
 }
 
   
