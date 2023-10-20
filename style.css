@@ -51,27 +51,47 @@ footer {
     width: 100%;
 }
 .bike img {
-    width: 500px; /* Ändere die Breite nach deinen Wünschen */
-    height: auto; /* Behält das Seitenverhältnis bei */
-    border-radius: 30px; /* Wenn du abgerundete Ecken möchtest */
+    width: 500px; 
+    height: auto; 
+    border-radius: 30px; 
 }
 
 header h1 {
-    font-size: 36px; /* Ändere die Größe nach Bedarf */
-    color: #1fcb25; /* Ändere die Farbe nach deinen Wünschen */
+    font-size: 36px; 
+    color: #1fcb25; 
 }
-/* Grundlegende Anpassungen für kleinere Bildschirme (z. B. Smartphones) */
+
 @media (max-width: 768px) {
-    /* Verkleinere die Überschrift im Header */
+
     header h1 {
         font-size: 24px;
     }
     
-    /* Ändere die Breite der Bilder in deinem Hauptinhalt */
     .bike img {
-        width: 100%; /* Füllt die Bildschirmbreite */
+        width: 100%; 
     }
 }
+.call-to-action-button {
+    background-color:#333 ;
+    color: #1fcb25; 
+    padding: 1px 10px; 
+    font-size: 15px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+  
+    &:hover {
+      background-color: #1fcb25;; 
+    }
+  }
+  body {
+    background-image: url('images/Road-Rider-Guide\ \(1\).png');
+    background-size: contain;
+    background-position: center center; 
+    background-attachment: fixed; 
+}
+
 
 
 

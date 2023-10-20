@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kontakt - Road Rider Guide</title>
+  <title>Kontakt - Road Rider Guide: contact</title>
   <link rel="stylesheet" href="style.css">
+
+  
+  
 </head>
 <body>
   <header class="fade-in-up">
@@ -46,6 +49,21 @@
         <a href="tel:+41768158112">Telefon +41/76'815'81'12</a>
       </p>
     </section>
+   
+    
+    <section class="contact-form">
+      <h2>Kontaktformular</h2>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Nachricht:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="button" id="submit-button">Nachricht senden</button>
+      </form>
+    </section>
+
     <section class="additional-info">
       <h2>Weitere Informationen</h2>
       <ul>
@@ -55,9 +73,45 @@
 
       </ul>
     </section>
+    <section class="faq">
+      <h2>Häufig gestellte Fragen</h2>
+      <ul>
+        <li>
+          <strong>Frage 1:</strong> Was sind Ihre Öffnungszeiten?
+          <p>Antwort auf Frage 1: Klicken sie auf denn Link, dann kommen sie zu denn Öffnungszeiten: <a href="about.html#oeffnungszeiten">Hier: Öffnungszeiten</a> </p>
+        </li>
+        <li>
+          <strong>Frage 2:</strong> Welche Produkte bieten Sie an?
+          <p>Antwort auf Frage 2: Wir bieten viele mögliche Motorräder an, denn wir kooperieren mit vielen Motorrd-Marken. Unsere Sponsoren können sie <a href="sponsor.html">hier </a> sehen</p>
+        </li>
+        <li>
+          <strong>Frage 3:</strong> Ist die Seite kostenlos?
+          <p>Antwort auf Frage 2: Ja, die Seite ist kostenlos und bietet ihnen ausgezeichnete empfehlungen.</p>
+        </li>
+       
+      </ul>
+    </section>
+ 
+    
+    
   </main>
   <footer>
     <p>&copy; 2023 Road-Rider-Guide</p>
   </footer>
+  <script>
+    // JavaScript zur Verarbeitung des Formulars
+    document.getElementById('submit-button').addEventListener('click', function() {
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var message = document.getElementById('message').value;
+  
+      // Hier kannst du die Validierung und den E-Mail-Versand einrichten
+      if (name && email && message) {
+        alert('Nachricht gesendet:\nName: ' + name + '\nE-Mail: ' + email + '\nNachricht: ' + message);
+      } else {
+        alert('Bitte füllen Sie alle Felder aus.');
+      }
+    });
+  </script>
 </body>
 </html>

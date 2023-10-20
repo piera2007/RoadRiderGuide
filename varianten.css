@@ -112,6 +112,11 @@ header h1 {
         transform: scale(0.8); /* Bilder etwas größer anzeigen */
     }
 }
-
+body {
+    background-image: url('images/Road-Rider-Guide\ \(1\).png');
+    background-size: contain;
+    background-position: center center; 
+    background-attachment: fixed; 
+}
 
   
