@@ -1,10 +1,10 @@
-/* style.css */
 .logo-img {
-    max-width: 150px; /* Ändere die Größe nach Bedarf */
-    height: auto; /* Behält das Seitenverhältnis bei */
-    display: inline-block; /* Stellt sicher, dass das Logo inline angezeigt wird */
-    vertical-align: middle; /* Zentriert das Logo vertikal in der Kopfzeile */
-  }/* style.css */
+    max-width: 150px; 
+    height: auto; 
+    display: inline-block; 
+    vertical-align: middle; 
+  }
+  
   header {
     background-color: #333;
     color: #fff;
@@ -29,7 +29,7 @@ nav ul li {
 }
 
 nav ul li a:hover {
-    color: #000000; /* Eine andere Farbe deiner Wahl */
+    color: #000000; 
 }
 
 nav ul li a {
@@ -37,6 +37,7 @@ nav ul li a {
     color: #1fcb25;
     transition: color 0.3s;
 }
+
 main {
     padding: 20px;
 }
@@ -50,6 +51,7 @@ footer {
     margin-bottom: auto;
     width: 100%;
 }
+
 .bike img {
     width: 500px; 
     height: auto; 
@@ -71,6 +73,7 @@ header h1 {
         width: 100%; 
     }
 }
+
 .call-to-action-button {
     background-color:#333 ;
     color: #1fcb25; 
@@ -85,6 +88,7 @@ header h1 {
       background-color: #1fcb25;; 
     }
   }
+
   body {
     background-image: url('images/Road-Rider-Guide\ \(1\).png');
     background-size: contain;

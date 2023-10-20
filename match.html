@@ -8,7 +8,6 @@
     <script>
       function updateMotorradTypen() {
         var alter = document.getElementById("alter").value;
-
         var motorradTypSelect = document.getElementById("motorrad-typ");
 
         while (motorradTypSelect.options.length > 0) {
@@ -74,12 +73,11 @@
         </select>
         <br />
 
-        <label for="motorrad-typ"
-          >Schritt 2: Welche Art von Motorrad bevorzugen Sie?</label
-        >
+        <label for="motorrad-typ">
+          Schritt 2: Welche Art von Motorrad bevorzugen Sie?
+        </label>
         <select name="motorrad-typ" id="motorrad-typ"></select>
         <button class="call-to-action-button">Finden Sie Ihr Abenteuer</button>
-
       </form>
       <a href="variante1.1.html" id="variante1.1-link"></a>
       <a href="variante1.2.html" id="variante1.2-link"></a>
@@ -109,9 +107,8 @@
       function redirectToAdventurePage() {
         var alter = document.getElementById("alter").value;
         var motorradTyp = document.getElementById("motorrad-typ").value;
-        var redirectURL = "standard_abenteuerseite.html"; // Standardweiterleitung
+        var redirectURL = "standard_abenteuerseite.html";
 
-        // Definieren Sie hier die Links für spezielle Kombinationen
         if (alter === "15-17" && motorradTyp === "Strasse") {
           redirectURL = "variante1.1.html";
         } else if (alter === "15-17" && motorradTyp === "Motocross / Trial") {
@@ -154,12 +151,8 @@
           redirectURL = "variante2.10.html";
         }
 
-        // Fügen Sie weitere Kombinationen hinzu, wie benötigt
-
-        // Verwenden von Links zur Weiterleitung anstelle von window.location.href
         window.location.href = redirectURL;
 
-        // Die Formularübermittlung verhindern, um die Standardaktion zu blockieren
         return false;
       }
     </script>
