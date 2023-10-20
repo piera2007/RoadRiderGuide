@@ -5,11 +5,13 @@
     display: inline-block; /* Stellt sicher, dass das Logo inline angezeigt wird */
     vertical-align: middle; /* Zentriert das Logo vertikal in der Kopfzeile */
   }/* style.css */
-header {
+  header {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px;
+    background-image: url('images/header-background.jpg');
+    background-size: cover;
 }
 
 nav {
@@ -26,11 +28,15 @@ nav ul li {
     margin-right: 10px;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
+nav ul li a:hover {
+    color: #000000; /* Eine andere Farbe deiner Wahl */
 }
 
+nav ul li a {
+    text-decoration: none;
+    color: #1fcb25;
+    transition: color 0.3s;
+}
 main {
     padding: 20px;
 }
@@ -44,5 +50,30 @@ footer {
     margin-bottom: auto;
     width: 100%;
 }
+.bike img {
+    width: 500px; /* Ändere die Breite nach deinen Wünschen */
+    height: auto; /* Behält das Seitenverhältnis bei */
+    border-radius: 30px; /* Wenn du abgerundete Ecken möchtest */
+}
+
+header h1 {
+    font-size: 36px; /* Ändere die Größe nach Bedarf */
+    color: #1fcb25; /* Ändere die Farbe nach deinen Wünschen */
+}
+/* Grundlegende Anpassungen für kleinere Bildschirme (z. B. Smartphones) */
+@media (max-width: 768px) {
+    /* Verkleinere die Überschrift im Header */
+    header h1 {
+        font-size: 24px;
+    }
+    
+    /* Ändere die Breite der Bilder in deinem Hauptinhalt */
+    .bike img {
+        width: 100%; /* Füllt die Bildschirmbreite */
+    }
+}
+
+
 
   
+

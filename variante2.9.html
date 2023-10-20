@@ -4,38 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Road-Rider-Guide</title>
-  <link rel="stylesheet" href="style.css">
-  <script>
-    // JavaScript-Funktion, um Motorradtypen basierend auf    dem Alter auszuwählen
-    function updateMotorradTypen() {
-      var alter = document.getElementById("alter").value;
-      var motorradTypSelect = document.getElementById("motorrad-typ");
-      
-    
-
-      if (alter === "15-17") {
-        // Nur 50ccm und 125ccm anzeigen
-        var option50ccm = document.createElement("option");
-        option50ccm.value = "50ccm";
-        option50ccm.text = "50ccm Motorrad";
-        motorradTypSelect.add(option50ccm);
-
-        var option125ccm = document.createElement("option");
-        option125ccm.value = "125ccm";
-        option125ccm.text = "125ccm Motorrad";
-        motorradTypSelect.add(option125ccm);
-      } else if (alter === "18-50+") {
-        // Alle verfügbaren Motorradtypen anzeigen
-        var motorradTypen = ["sportler", "motocross / trial", "supermoto", "enduro", "naked-bike", "touring", "roller", "chopper", "custom Bike", "gespanne"];
-        for (var i = 0; i < motorradTypen.length; i++) {
-          var option = document.createElement("option");
-          option.value = motorradTypen[i];
-          option.text = motorradTypen[i];
-          motorradTypSelect.add(option);
-        }
-      }
-    }
-  </script>
+  <link rel="stylesheet" href="varianten.css">
+ 
+  
 </head>
 <body>
   <header class="fade-in-up">
@@ -45,8 +16,7 @@
       </div>
     </a>
     <div class="titel">
-      <h1>Willkommen bei Road-Rider-Guide</h1>
-      Wir führen Sie zu Ihrem perfekten Motorrad!
+      <h1>Das könnte ihnen gefallen:</h1>
     </div>
   </header>
   <nav>
@@ -59,59 +29,62 @@
 
     </ul>
 </nav>
-<main>
-    <section>
-        <h2>Über Uns</h2>
-        <p>Wir sind ein tolles Unternehmen!</p>
-    </section>
-    <section>
-        <h2>Kontakt</h2>
-        <p>Kontaktiere uns unter kontakt@meinunternehmen.com</p>
-    </section>
-</main>
+<div id="variante11">
+    <figure>
+        <img src="images/211.png" alt="agv" />
+        <figcaption>BMW R 100 RT</figcaption>
+    </figure>
+    <figure>
+        <img src="images/212.png" alt="Harley-Davidson" />
+        <figcaption>YAMAHA YZF-R7</figcaption>
+    </figure>
+   
+    <figure>
+        <img src="images/213.png" alt="aprilia" />
+        <figcaption>BMW S 1000 R ABS</figcaption>
+    </figure>
+    <figure>
+        <img src="images/214.png" alt="BMW" />
+        <figcaption>YAMAHA YZF-R1 ABS</figcaption>
+    </figure>
+     <figure>
+        <img src="images/215.png" alt="akrapovic" />
+        <figcaption>KAWASAKI Ninja H2 SX SE Tourer</figcaption>
+    </figure>
+    <figure>
+        <img src="images/216.png" alt="Honda" />
+        <figcaption>BMW S 1000 RR ABS + DTC</figcaption>
+    </figure>
+    <figure>
+        <img src="images/217.png" alt="Kawasaki" />
+        <figcaption>KTM 1290 Super Duke GT</figcaption>
+    </figure>
+    <figure>
+        <img src="images/218.png" alt="KTM" />
+        <figcaption>APRILIA RS 660</figcaption>
+    </figure>
+    <figure>
+        <img src="images/219.png" alt="peugeot" />
+        <figcaption>HARLEY-DAVIDSON XG 750 Street</figcaption>
+    </figure>
+    <figure>
+        <img src="images/2111.png" alt="piaggio" />
+        <figcaption>SUZUKI GSX-S 750 ABS</figcaption>
+    </figure>
+    <figure>
+        <img src="images/2112.png" alt="Suzuki" />
+        <figcaption>KAWASAKI Z H2 ABS AKRAPOVIC + Stage 1</figcaption>
+    </figure>
+    <figure>
+        <img src="images/2113.png" alt="Yamaha" />
+        <figcaption>KAWASAKI Z 650 ABS</figcaption>
+    </figure>
+</div>
+<div><a href="match.html">Zurück zur vorherigen Seite</a>
+</div>
 <footer>
-    <p>&copy; 2023 Mein Unternehmen</p>
+    <p>&copy; 2023 Road-Rider-Guide</p>
 </footer>
-
-  <main>
-    <h2>Entdecken Sie Ihr passendes Motorrad:</h2>
-    <form>
-      <label for="alter">Schritt 1: Wie alt sind Sie?</label>
-      <select name="alter" id="alter" onchange="updateMotorradTypen();">
-        <option value="-">-</option>
-        <option value="15-17">15-17 Jahre</option>
-        <option value="18-50+">18-50+ Jahre</option>
-      </select>
-
-      <label for="motorrad-typ">Schritt 2: Welche Art von Motorrad bevorzugen Sie?</label>
-      <select name="motorrad-typ" id="motorrad-typ">
-        <!-- Optionen werden von JavaScript aktualisiert -->
-      </select>
-
-      <input type="submit" value="Finden Sie Ihr Abenteuer" />
-    </form>
-  </main>
-
-  <section>
-    <h2>Über Road-Rider-Guide</h2>
-    <p>
-      Bei Road-Rider-Guide sind wir leidenschaftliche Motorradenthusiasten mit
-      jahrzehntelanger Erfahrung auf der Straße. Unser Ziel ist es, Ihre
-      Motorradträume wahr werden zu lassen, egal ob Sie ein Anfänger oder ein
-      erfahrener Fahrer sind. Wir bieten maßgeschneiderte Beratung und
-      empfehlen das ideale Motorrad für Sie, basierend auf Ihrem Alter, Ihren
-      Vorlieben und Ihrem Fahrstil.
-    </p>
-    <p>
-      Unsere Beratungsdienste sind darauf ausgerichtet, Ihre Sicherheit und
-      Freude am Fahren zu maximieren. Verlassen Sie sich auf uns, um Sie auf
-      den richtigen Weg zu bringen, sei es für entspannte Wochenendausflüge
-      oder anspruchsvolle Langstreckentouren.
-    </p>
-    <p>
-      Bereit, Ihr Abenteuer zu beginnen? Starten Sie Ihre Reise noch heute und
-      finden Sie heraus, welches Motorrad am besten zu Ihnen passt!
-    </p>
-  </section>
 </body>
 </html>
+

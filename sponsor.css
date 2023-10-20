@@ -88,4 +88,17 @@ figure:hover img {
 figure:hover figcaption {
     transform: translateY(-100%);
 }
+/* Grundlegende Anpassungen für kleinere Bildschirme (z. B. Smartphones) */
+@media (max-width: 768px) {
+    /* Verkleinere die Überschrift im Header */
+    header h1 {
+        font-size: 24px;
+    }
+    
+    /* Ändere die Breite der Bilder in deinem Hauptinhalt */
+    .bike img {
+        width: 100%; /* Füllt die Bildschirmbreite */
+    }
+}
+
   

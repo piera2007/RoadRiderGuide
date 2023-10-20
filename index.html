@@ -5,37 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Road-Rider-Guide</title>
   <link rel="stylesheet" href="style.css">
-  <script>
-    // JavaScript-Funktion, um Motorradtypen basierend auf    dem Alter auszuwählen
-    function updateMotorradTypen() {
-      var alter = document.getElementById("alter").value;
-      var motorradTypSelect = document.getElementById("motorrad-typ");
-      
-    
-
-      if (alter === "15-17") {
-        // Nur 50ccm und 125ccm anzeigen
-        var option50ccm = document.createElement("option");
-        option50ccm.value = "50ccm";
-        option50ccm.text = "50ccm Motorrad";
-        motorradTypSelect.add(option50ccm);
-
-        var option125ccm = document.createElement("option");
-        option125ccm.value = "125ccm";
-        option125ccm.text = "125ccm Motorrad";
-        motorradTypSelect.add(option125ccm);
-      } else if (alter === "18-50+") {
-        // Alle verfügbaren Motorradtypen anzeigen
-        var motorradTypen = ["sportler", "motocross / trial", "supermoto", "enduro", "naked-bike", "touring", "roller", "chopper", "custom Bike", "gespanne"];
-        for (var i = 0; i < motorradTypen.length; i++) {
-          var option = document.createElement("option");
-          option.value = motorradTypen[i];
-          option.text = motorradTypen[i];
-          motorradTypSelect.add(option);
-        }
-      }
-    }
-  </script>
+  
 </head>
 <body>
   <header class="fade-in-up">
@@ -60,58 +30,46 @@
     </ul>
 </nav>
 <main>
-    <section>
-        <h2>Über Uns</h2>
-        <p>Wir sind ein tolles Unternehmen!</p>
-    </section>
-    <section>
-        <h2>Kontakt</h2>
-        <p>Kontaktiere uns unter kontakt@meinunternehmen.com</p>
-    </section>
+  <section class="welcome-section">
+    <h2>Willkommen bei Road-Rider-Guide</h2>
+    <p>Wir führen Sie zu Ihrem perfekten Motorrad!</p>
+  </section>
+
+  <section class="featured-bikes">
+    <h2>Unsere Top-Motorräder</h2>
+    <p>Hier sind einige Motorräder, die wir empfehlen:</p>
+  
+    <div class="bike">
+      <img src="images/r6.png" alt="Motorrad 1">
+      <h3>Yamaha YZF R6</h3>
+      <p>Die Yamaha YZF R6 ist ein sportliches Motorrad mit beeindruckender Leistung und Handling.</p> <br><br><br>
+    </div>
+  
+    <div class="bike">
+      <img src="images/ninja 650.webp" alt="Motorrad 2">
+      <h3>Kawasaki Ninja 650</h3>
+      <p>Die Kawasaki Ninja 650 ist ein vielseitiges Motorrad, das sowohl für Anfänger als auch erfahrene Fahrer geeignet ist.</p><br><br><br>
+    </div>
+  
+    <div class="bike">
+      <img src="images/street 750.jpeg" alt="Motorrad 3">
+      <h3>Harley-Davidson Street 750</h3>
+      <p>Die Harley-Davidson Street 750 ist ein Klassiker für Cruiser-Liebhaber und bietet ein unverwechselbares Fahrerlebnis.</p><br><br><br>
+    </div>
+  </section>
+
+  <section class="about-us">
+    <h2>Über uns</h2>
+    <p>Erfahren Sie mehr über unser Unternehmen und unsere Mission.</p>
+    <a href="about.html">Mehr erfahren</a>
+  </section>
 </main>
+
 <footer>
     <p>&copy; 2023 Mein Unternehmen</p>
 </footer>
-
-  <main>
-    <h2>Entdecken Sie Ihr passendes Motorrad:</h2>
-    <form>
-      <label for="alter">Schritt 1: Wie alt sind Sie?</label>
-      <select name="alter" id="alter" onchange="updateMotorradTypen();">
-        <option value="-">-</option>
-        <option value="15-17">15-17 Jahre</option>
-        <option value="18-50+">18-50+ Jahre</option>
-      </select>
-
-      <label for="motorrad-typ">Schritt 2: Welche Art von Motorrad bevorzugen Sie?</label>
-      <select name="motorrad-typ" id="motorrad-typ">
-        <!-- Optionen werden von JavaScript aktualisiert -->
-      </select>
-
-      <input type="submit" value="Finden Sie Ihr Abenteuer" />
     </form>
   </main>
-
-  <section>
-    <h2>Über Road-Rider-Guide</h2>
-    <p>
-      Bei Road-Rider-Guide sind wir leidenschaftliche Motorradenthusiasten mit
-      jahrzehntelanger Erfahrung auf der Straße. Unser Ziel ist es, Ihre
-      Motorradträume wahr werden zu lassen, egal ob Sie ein Anfänger oder ein
-      erfahrener Fahrer sind. Wir bieten maßgeschneiderte Beratung und
-      empfehlen das ideale Motorrad für Sie, basierend auf Ihrem Alter, Ihren
-      Vorlieben und Ihrem Fahrstil.
-    </p>
-    <p>
-      Unsere Beratungsdienste sind darauf ausgerichtet, Ihre Sicherheit und
-      Freude am Fahren zu maximieren. Verlassen Sie sich auf uns, um Sie auf
-      den richtigen Weg zu bringen, sei es für entspannte Wochenendausflüge
-      oder anspruchsvolle Langstreckentouren.
-    </p>
-    <p>
-      Bereit, Ihr Abenteuer zu beginnen? Starten Sie Ihre Reise noch heute und
-      finden Sie heraus, welches Motorrad am besten zu Ihnen passt!
-    </p>
-  </section>
 </body>
 </html>
+
