@@ -19,7 +19,7 @@ if(isset($_POST["submit"])){
 
         session_start();
         $_SESSION["username"] = $userExists[0]["username"];
-        header("Location: hompage.html");
+        header("Location: homepage.php");
         
     }
 }

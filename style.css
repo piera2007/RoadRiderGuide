@@ -107,3 +107,16 @@ header h1 {
     background-repeat: no-repeat;
     
 }
+/* Stellen Sie sicher, dass der Container relativ positioniert ist */
+header.fade-in-up {
+    position: relative;
+  }
+  
+  /* Positionieren Sie das neue Element oben rechts innerhalb des Headers */
+  .obere-rechte-ecke {
+    position: absolute;
+    top:  0;
+    right:  50;
+    /* Weitere Stile für das Element, z. B. Farbe, Größe usw. */
+  }
+  

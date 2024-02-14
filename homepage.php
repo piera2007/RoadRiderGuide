@@ -12,7 +12,7 @@
     <title>Road-Rider-Guide: home</title>
     <link rel="stylesheet" href="style.css" />
     
-  </head>
+    </head>
   <body>
     <header class="fade-in-up">
       <a href="index.hauptseite.html">
@@ -29,6 +29,7 @@
         Wir führen Sie zu Ihrem perfekten Motorrad!
       </div>
     </header>
+   
     <nav>
       <ul>
         <li><a href="index.hauptseite.html">Startseite</a></li>
@@ -36,8 +37,13 @@
         <li><a href="contact.html">Kontakt</a></li>
         <li><a href="sponsor.html">Sponsoren</a></li>
         <li><a href="match.html">Passendes Motorrad</a></li>
+        <li><a href="login.php">Login</a></li>
+        <li><a href="index.php">Registrieren</a></li>
+        <li><a href="benutzer.php">Benutzer & Logout</a></li>
       </ul>
     </nav>
+    
+    <!-- Rest des Inhalts, z.B. Navigation und Hauptinhalt -->
     <main>
       <section class="welcome-section">
         <h2>Willkommen bei Road-Rider-Guide</h2>

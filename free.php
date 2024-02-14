@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="fade-in-up">
-      <a href="index.hauptseite.html">
+      <a href="homepage.php">
         <div class="logo">
           <img
             src="images/Road-Rider-Guide.png"
@@ -18,16 +18,19 @@
         </div>
       </a>
       <div class="titel">
-        <h1>Über uns</h1>
+        <h1>Stellen sie eine Anfrage!</h1>
       </div>
     </header>
     <nav>
       <ul>
-        <li><a href="index.hauptseite.html">Startseite</a></li>
+      <li><a href="index.hauptseite.html">Startseite</a></li>
         <li><a href="about.html">Über uns</a></li>
         <li><a href="contact.html">Kontakt</a></li>
         <li><a href="sponsor.html">Sponsoren</a></li>
         <li><a href="match.html">Passendes Motorrad</a></li>
+        <li><a href="login.php">Login</a></li>
+        <li><a href="index.php">Registrieren</a></li>
+        <li><a href="benutzer.php">Benutzer & Logout</a></li>
       </ul>
     </nav>
     <main>
@@ -139,43 +142,7 @@
           Nick Ienatsch
         </p>
       </section>
-      <section>
-        <h2 id="oeffnungszeiten">Öffnungszeiten</h2>
-        <table>
-          <tr>
-            <th>Tag</th>
-            <th>Öffnungszeit</th>
-          </tr>
-          <tr>
-            <td>Montag</td>
-            <td>9:00 - 18:00 Uhr</td>
-          </tr>
-          <tr>
-            <td>Dienstag</td>
-            <td>9:00 - 18:00 Uhr</td>
-          </tr>
-          <tr>
-            <td>Mittwoch</td>
-            <td>9:00 - 18:00 Uhr</td>
-          </tr>
-          <tr>
-            <td>Donnerstag</td>
-            <td>9:00 - 18:00 Uhr</td>
-          </tr>
-          <tr>
-            <td>Freitag</td>
-            <td>9:00 - 18:00 Uhr</td>
-          </tr>
-          <tr>
-            <td>Samstag</td>
-            <td>10:00 - 15:00 Uhr</td>
-          </tr>
-          <tr>
-            <td>Sonntag</td>
-            <td>Geschlossen</td>
-          </tr>
-        </table>
-      </section>
+     
     </main>
     <footer>
       <p>&copy; 2023 Road-Rider-Guide</p>

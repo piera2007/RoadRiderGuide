@@ -31,12 +31,11 @@ function registerUser($username, $email, $password){
     $stmt->bindParam(":email", $email);
     $stmt->bindParam(":password", $password);
     $stmt->execute();
-    header("Location: hompage.html");
+    header("Location: homepage.php");
+    exit();
 }
 
 ?>
-
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -46,14 +45,19 @@ function registerUser($username, $email, $password){
     <link rel="stylesheet" href="register.css">
 </head>
 <body>
+<form action="login.php" method="get">
+    <button type="submit">Login</button>
+</form>
     <form action="index.php" method="POST">
         <h1>Account Erstellen</h1>
         <div class="inputs_container">
             <input type="text" placeholder="Benutzername" name="username" autocomplete="off">
             <input type="text" placeholder="Email" name="email" autocomplete="off">
             <input type="password" placeholder="Passwort" name="password" autocomplete="off">
-        </div>
-        <button name="submit">Erstellen</button>
-    </form>
+            <button name="submit">Erstellen</button>
+    </div>
+</form>
+
+    
 </body>
 </html>
