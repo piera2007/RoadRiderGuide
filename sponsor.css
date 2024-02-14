@@ -50,6 +50,7 @@ footer {
     gap: 1rem;
     max-width: 1000px;
     margin: 0 auto;
+    background-color: #ffffffcc;
 }
 
 figure {
