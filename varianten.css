@@ -1,24 +1,31 @@
 .logo-img {
     max-width: 150px; 
     height: auto; 
-    display: inline-block;
+    display: inline-block; 
     vertical-align: middle; 
   }
-
-header {
+  
+  header {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px;
+    background-image: url('images/header-background.jpg');
+    background-size: cover;
 }
 
 nav {
     background-color: #444;
+    height: 50px;
+    padding:  0; /* Reduziert den Innenabstand */
+    margin-top: -10px; /* Verschiebt das Element nach oben */
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: space-around;
 }
 
 nav ul li {
@@ -32,12 +39,17 @@ nav ul li a:hover {
 
 nav ul li a {
     text-decoration: none;
-    color: #1fcb25;
+    color: #d1d0d0;
     transition: color 0.3s;
+    padding-top:  26.5px;
+    padding-bottom:  26.5px;
+    line-height:  47px; /* Passen Sie die Zeilenhöhe an */
+    font-size:  20px; /* Erhöht die Schriftgröße auf  20px */
 }
 
 main {
     padding: 20px;
+    background-color: #ffffffcc;
 }
 
 footer {
@@ -122,4 +134,30 @@ body {
     background-repeat: no-repeat;
 }
 
+.call-to-action-button {
+    background-color:#333 ;
+    color: #1fcb25; 
+    padding: 1px 10px; 
+    font-size: 15px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+  
+    &:hover {
+      background-color: #1fcb25;; 
+    }
+  }
+  /* Stellen Sie sicher, dass der Container relativ positioniert ist */
+header.fade-in-up {
+    position: relative;
+  }
+  
+  /* Positionieren Sie das neue Element oben rechts innerhalb des Headers */
+  .obere-rechte-ecke {
+    position: absolute;
+    top:  0;
+    right:  50;
+    /* Weitere Stile für das Element, z. B. Farbe, Größe usw. */
+  }
   

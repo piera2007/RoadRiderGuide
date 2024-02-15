@@ -1,7 +1,7 @@
 
 <!-- 
   Author: Piera Blum
-  Date: 20.10.2023
+  Date: 20.10.2024
   This is a website that helps you find the right motorcycle.
  -->
 
@@ -93,7 +93,7 @@
     </main>
 
     <footer>
-      <p>&copy; 2023 Mein Unternehmen</p>
+      <p>&copy; 2024 Mein Unternehmen</p>
     </footer>
   </body>
 </html>
