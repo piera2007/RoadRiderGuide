@@ -37,7 +37,8 @@ function updateColor() {
     "Blau",
     "Weiss",
     "Rot",
-    "Gruen"
+    "Grün",
+    "andere"
     // Weitere Farboptionen hier hinzufügen, falls erforderlich
   ];
   // Füge die Farboptionen hinzu
@@ -58,15 +59,16 @@ function redirectToAdventurePage() {
   var redirectMap = {
     "15-17": {
       "Strasse": {
-        Blau: "variante1.1.blau.html",
+        Blau: "varianten/variante1.1.blau.html",
         Weiss: "variante1.1.weiss.html",
         Schwarz: "variante1.1.schwarz.html",
         Rot: "variante1.1.rot.html",
-        Gruen: "variante1.1.gruen.html"
+        Gruen: "variante1.1.gruen.html",
+        andere: "variante1.1.andere.html"
 
       },
       "Motocross / Trial": {
-        Blau: "variante1.2.blau.html",
+        Blau: "varianten/variante1.2.blau.html",
         Weiss: "variante1.2.weiss.html",
         Schwarz: "variante1.2.schwarz.html",
         Rot: "variante1.2.rot.html",

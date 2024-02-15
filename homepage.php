@@ -15,7 +15,7 @@
     </head>
   <body>
     <header class="fade-in-up">
-      <a href="index.hauptseite.html">
+      <a href="homepage.php">
         <div class="logo">
           <img
             src="images/Road-Rider-Guide.png"
@@ -32,7 +32,7 @@
    
     <nav>
       <ul>
-        <li><a href="index.hauptseite.html">Startseite</a></li>
+        <li><a href="homepage.php">Startseite</a></li>
         <li><a href="about.html">Über uns</a></li>
         <li><a href="contact.html">Kontakt</a></li>
         <li><a href="sponsor.html">Sponsoren</a></li>

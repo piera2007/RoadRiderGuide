@@ -1,8 +1,9 @@
 <?php
-require("connection.php");
+session_start(); // Start the session
 
-if(isset($_POST["submit"])){
+include 'connection.php';
 
+if (isset($_POST["submit"])) {
     $username = $_POST["username"];
     $password = $_POST["password"];
 
@@ -10,20 +11,25 @@ if(isset($_POST["submit"])){
     $stmt->bindParam(":username", $username);
     $stmt->execute();
     $userExists = $stmt->fetchAll();
-    var_dump($userExists);
 
-    $passwordHashed = $userExists[0]["password"];
-    $checkPassword = password_verify($password, $passwordHashed);
+    if (count($userExists) >  0) {
+        $passwordHashed = $userExists[0]["password"];
+        $checkPassword = password_verify($password, $passwordHashed);
 
-    if($checkPassword === true){
-
-        session_start();
-        $_SESSION["username"] = $userExists[0]["username"];
-        header("Location: homepage.php");
-        
+        if ($checkPassword === true) {
+            $_SESSION["username"] = $userExists[0]["username"];
+            $_SESSION["id"] = $userExists[0]["id"]; // Store the user ID in the session
+            header("Location: homepage.php");
+            exit;
+        } else {
+            // Handle incorrect password
+        }
+    } else {
+        // Handle case where the username does not exist
     }
 }
 ?>
+
 
 <html lang="de">
 <head>
@@ -42,5 +48,8 @@ if(isset($_POST["submit"])){
         </div>
         <button name="submit">Login</button>
     </form>
+    <form action="index.php" method="get">
+    <button type="submit">Registrieren</button>
+</form>
 </body>
 </html>

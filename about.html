@@ -23,7 +23,7 @@
     </header>
     <nav>
       <ul>
-        <li><a href="index.hauptseite.html">Startseite</a></li>
+        <li><a href="homepage.php">Startseite</a></li>
         <li><a href="about.html">Über uns</a></li>
         <li><a href="contact.html">Kontakt</a></li>
         <li><a href="sponsor.html">Sponsoren</a></li>
@@ -72,6 +72,32 @@
           Organisieren regelmässig Touren.
         </p>
       </section>
+      <section>
+        <form method="POST" action="process_review.php">
+      <!-- Radio Inputs für die Sternbewertung -->
+      <fieldset>
+        <legend>Bewertung:</legend>
+        <input type="radio" id="rating-input-radio-5" name="rating-input-radio" value="5">
+        <label for="rating-input-radio-5">★★★★★</label>
+        <input type="radio" id="rating-input-radio-4" name="rating-input-radio" value="4">
+        <label for="rating-input-radio-4">★★★★☆</label>
+        <input type="radio" id="rating-input-radio-3" name="rating-input-radio" value="3">
+        <label for="rating-input-radio-3">★★★☆☆</label>
+        <input type="radio" id="rating-input-radio-2" name="rating-input-radio" value="2">
+        <label for="rating-input-radio-2">★★☆☆☆</label>
+        <input type="radio" id="rating-input-radio-1" name="rating-input-radio" value="1">
+        <label for="rating-input-radio-1">★☆☆☆☆</label>
+      </fieldset>
+    
+      <!-- Textarea für die Nachricht -->
+      <label for="review_text">Nachricht:</label>
+      <textarea id="review_text" name="review_text" rows="4"></textarea>
+    
+      <!-- Submit Button -->
+      <button type="submit" name="submit_review">Nachricht senden</button>
+    </form>
+    
+        </section>
       <section>
         <h2>Zitate</h2>
         <p>

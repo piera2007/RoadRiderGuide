@@ -18,5 +18,8 @@
             <input type="submit" value="Logout" name="logoutButton" />
         </form>
     </form>
+    <form action="homepage.php" method="get">
+    <button type="submit">Hauptseite</button>
+</form>
 </body>
 </html>
