@@ -33,7 +33,7 @@
     <nav>
       <ul>
         <li><a href="homepage.php">Startseite</a></li>
-        <li><a href="about.html">Über uns</a></li>
+        <li><a href="about.php">Über uns</a></li>
         <li><a href="contact.html">Kontakt</a></li>
         <li><a href="sponsor.html">Sponsoren</a></li>
         <li><a href="match.html">Passendes Motorrad</a></li>
@@ -88,7 +88,7 @@
       <section class="about-us">
         <h2>Über uns</h2>
         <p>Erfahren Sie mehr über unser Unternehmen und unsere Mission.</p>
-        <a href="about.html">Mehr erfahren</a>
+        <a href="about.php">Mehr erfahren</a>
       </section>
     </main>
 

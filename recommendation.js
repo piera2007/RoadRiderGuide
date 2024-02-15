@@ -38,7 +38,7 @@ function updateColor() {
     "Weiss",
     "Rot",
     "Grün",
-    "andere"
+    "Andere"
     // Weitere Farboptionen hier hinzufügen, falls erforderlich
   ];
   // Füge die Farboptionen hinzu

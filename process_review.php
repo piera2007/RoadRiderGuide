@@ -28,7 +28,7 @@ if (isset($_POST['submit_review'])) {
     // Execute the query for reviews
     if ($stmtReviews->execute()) {
         echo "Bewertung erfolgreich gespeichert.";
-        header("Location: about.html");
+        header("Location: about.php");
     } else {
         echo "Fehler beim Speichern der Bewertung.";
     }
