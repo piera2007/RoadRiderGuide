@@ -26,7 +26,7 @@
       <ul>
         <li><a href="homepage.php">Startseite</a></li>
         <li><a href="about.php">Über uns</a></li>
-        <li><a href="contact.html">Kontakt</a></li>
+        <li><a href="contact.php">Kontakt</a></li>
         <li><a href="sponsor.html">Sponsoren</a></li>
         <li><a href="match.html">Passendes Motorrad</a></li>
         <li><a href="login.php">Login</a></li>
@@ -52,19 +52,6 @@
         </p>
       </section>
 
-      <section class="contact-form">
-        <h2>Kontaktformular</h2>
-        <form id="contact-form">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-          <label for="email">E-Mail:</label>
-          <input type="email" id="email" name="email" required />
-          <label for="message">Nachricht:</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-          <button type="button" id="submit-button">Nachricht senden</button>
-        </form>
-      </section>
-
       <section class="additional-info">
         <h2>Weitere Informationen</h2>
         <ul>
@@ -73,11 +60,11 @@
           <a href="about.php#oeffnungszeiten">Öffnungszeiten</a>
         </ul>
       </section>
-      <section class="faq">
-        <h2>Häufig gestellte Fragen</h2>
+
+      <?php include 'get_faq.php'; ?>
         <ul>
           <li>
-            <strong>Frage 1:</strong> Was sind Ihre Öffnungszeiten?
+            <strong>Frage 1:</strong> Wie sind Ihre Öffnungszeiten?
             <p>
               Antwort auf Frage 1: Klicken sie auf denn Link, dann kommen sie zu
               denn Öffnungszeiten:
@@ -95,12 +82,27 @@
           <li>
             <strong>Frage 3:</strong> Ist die Seite kostenlos?
             <p>
-              Antwort auf Frage 2: Ja, die Seite ist kostenlos und bietet ihnen
+              Antwort auf Frage 3: Ja, die Seite ist kostenlos und bietet ihnen
               ausgezeichnete empfehlungen.
             </p>
           </li>
         </ul>
       </section>
+
+  <section>
+  <form method="POST" action="insert_faq.php">
+<!-- Radio Inputs für die Sternbewertung -->
+
+
+<!-- Textarea für die Nachricht -->
+<label for="question">Haben sie eine Frage?</label>
+<textarea id="question" name="question" rows="4"></textarea>
+
+<!-- Submit Button -->
+<button type="submit" name="submit_review">Frage abschicken</button>
+</form>
+
+  </section>
     </main>
     <footer>
       <p>&copy; 2024 Road-Rider-Guide</p>

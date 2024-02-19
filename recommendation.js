@@ -12,10 +12,7 @@ function updateMotorradTypen() {
     "Enduro",
     "Naked-Bike",
     "Touring",
-    "Roller",
-    "Chopper",
-    "Custom Bike",
-    "Gespanne",
+    "Roller"
   ];
 
   for (var i = 0; i < motorradTypen.length; i++) {
@@ -115,33 +112,6 @@ function redirectToAdventurePage() {
         Rot: "varianten/variante1.7.rot.html",
         Gruen: "varianten/1.7.gruen.html",
         Andere: "varianten/variante1.7.andere.html"
-
-      },
-       "Chopper":{
-        Blau: "varianten/variante1.8.blau.html",
-        Weiss: "varianten/variante1.8.weiss.html",
-        Schwarz: "varianten/variante1.8.schwarz.html",
-        Rot: "varianten/variante1.8.rot.html",
-        Gruen: "varianten/variante1.8.gruen.html",
-        Andere: "varianten/variante1.8.andere.html"
-
-      },
-      "Custom Bike": {
-        Blau: "varianten/variante1.9.blau.html",
-        Weiss: "varianten/variante1.9.weiss.html",
-        Schwarz: "varianten/variante1.9.schwarz.html",
-        Rot: "varianten/variante1.9.rot.html",
-        Gruen: "varianten/variante1.9.gruen.html",
-        Andere: "varianten/variante1.9.andere.html"
-
-      },
-      "Gespanne": {
-        Blau: "varianten/variante1.10.blau.html",
-        Weiss: "varianten/variante1.10.weiss.html",
-        Schwarz: "varianten/variante1.10.schwarz.html",
-        Rot: "varianten/variante1.10.rot.html",
-        Gruen: "varianten/variante1.10.gruen.html",
-        Andere: "varianten/variante1.10.andere.html"
       },
     },
     "18+": {
@@ -202,30 +172,6 @@ function redirectToAdventurePage() {
             Rot: "varianten/variante2.7.rot.html",
             Gruen: "varianten/variante2.7.gruen.html",
             Andere: "varianten/variante2.7.andere.html"
-          },
-           "Chopper":{
-            Blau: "varianten/variante2.8.blau.html",
-            Weiss: "varianten/variante2.8.weiss.html",
-            Schwarz: "varianten/variante2.8.schwarz.html",
-            Rot: "varianten/variante2.8.rot.html",
-            Gruen: "varianten/variante2.8.gruen.html",
-            Andere: "varianten/variante2.8.andere.html"
-            
-          },"Custom Bike": {
-            Blau: "varianten/variante2.9.blau.html",
-            Weiss: "varianten/variante2.9.weiss.html",
-            Schwarz: "varianten/variante2.9.schwarz.html",
-            Rot: "varianten/variante2.9.rot.html",
-            Gruen: "varianten/variante2.9.gruen.html",
-            Andere: "varianten/variante2.9andere.html"
-
-          },"Gespanne": {
-            Blau: "varianten/variante2.10.blau.html",
-            Weiss: "varianten/variante2.10.weiss.html",
-            Schwarz: "varianten/variante2.10.schwarz.html",
-            Rot: "varianten/variante2.10.rot.html",
-            Gruen: "varianten/variante2.10.gruen.html",
-            Andere: "varianten/variante2.10.andere.html"
           },
     },
   };
