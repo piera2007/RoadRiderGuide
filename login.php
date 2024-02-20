@@ -1,3 +1,8 @@
+<!--
+   Author: Piera Blum
+   Date: 21.02.2024
+   Description: It is a PHP script for login users.
+-->
 <?php
 session_start(); // Start the session
 

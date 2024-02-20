@@ -1,3 +1,9 @@
+/**
+ * Author: Piera Blum
+ * Date: 21.02.2024
+ * Description: These functions update the lists for motorcycle types and colors
+ * it redirects the user to the appropriate page based on age, motorcycle type and color.
+ */
 function updateMotorradTypen() {
   var motorradTypSelect = document.getElementById("motorrad-typ");
 
@@ -25,7 +31,7 @@ function updateMotorradTypen() {
 function updateColor() {
   var colorSelect = document.getElementById("color");
 
-  // Entferne vorhandene Farboptionen
+  // Remove existing color options
   while (colorSelect.options.length > 0) {
     colorSelect.options.remove(0);
   }
@@ -36,9 +42,9 @@ function updateColor() {
     "Rot",
     "Gruen",
     "Andere"
-    // Weitere Farboptionen hier hinzufügen, falls erforderlich
   ];
-  // Füge die Farboptionen hinzu
+
+  // Add the color options
   for (var i = 0; i < color.length; i++) {
     var option = document.createElement("option");
     option.value = color[i];
@@ -52,7 +58,7 @@ function redirectToAdventurePage() {
   var motorradTyp = document.getElementById("motorrad-typ").value;
   var color = document.getElementById("color").value;
 
-  // Map für die Weiterleitungs-URLs basierend auf Alter und Motorradtyp
+  // Map for the redirect URLs based on age and motorcycle type
   var redirectMap = {
     "15-17": {
       "Strasse": {
@@ -176,10 +182,10 @@ function redirectToAdventurePage() {
     },
   };
 
-  // Standard-URL, falls keine Übereinstimmung gefunden wird
+  // Default URL if no match is found
   var redirectURL = "match.html";
 
-  // Überprüfen, ob das Alter, der Motorradtyp und die Farbe in der Map vorhanden sind
+  // Check whether the age, motorcycle type and color are present on the map
   if (
     redirectMap.hasOwnProperty(alter) &&
     redirectMap[alter].hasOwnProperty(motorradTyp) &&
@@ -188,7 +194,7 @@ function redirectToAdventurePage() {
     redirectURL = redirectMap[alter][motorradTyp][color];
   }
 
-  // Weiterleitung zur ermittelten URL
+  // Redirection to the determined URL
   window.location.href = redirectURL;
   return false;
 }

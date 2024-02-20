@@ -1,16 +1,21 @@
+<!--
+   Author: Piera Blum
+   Date: 21.02.2024
+   Description: Handles saving user reviews.
+-->
 <?php
-session_start(); // Start the session to access session variables
+session_start();
 
-include 'connection.php'; // Include your existing connection script
+include 'connection.php';
 
 if (isset($_POST['submit_review'])) {
     // Get form data
-    $rating = $_POST['rating-input-radio']; // The selected radio button's value
-    $reviewText = $_POST['review_text']; // Use 'review_text' instead of 'user_message'
+    $rating = $_POST['rating-input-radio'];
+    $reviewText = $_POST['review_text'];
     
     // Retrieve the user ID from the session
     if (isset($_SESSION['id'])) {
-        $userId = $_SESSION['id']; // This should come from your user session or login system
+        $userId = $_SESSION['id'];
     } else {
         // If the user ID is not set in the session, redirect to the login page
         header("Location: login.php");
