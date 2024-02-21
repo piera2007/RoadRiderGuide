@@ -37,7 +37,7 @@ h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 38px;
 
-    background-image: linear-gradient(to right, rgb(162, 0, 255), rgb(74, 15, 236));
+    background: linear-gradient(to right, rgb(19, 231, 30), rgb(8, 11, 208));
     background-size: 100% 4px;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -81,7 +81,7 @@ button{
     color: white;
     font-family: sans-serif;
     font-size: 22px;
-    background: linear-gradient(to right, rgb(162, 0, 255), rgb(74, 15, 236));
+    background: linear-gradient(to right, rgb(47, 140, 52), rgb(60, 62, 135));
     transition: 0.2s;
 
     
