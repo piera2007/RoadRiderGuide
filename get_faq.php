@@ -1,9 +1,14 @@
+<!-- 
+  Author: Piera Blum
+  Date: 21.10.2024
+  Description: This is a PHP Script that retrieve your faq from the database.
+ -->
 <?php
-// Verbindung zur Datenbank herstellen
-include 'connection.php'; // Verwenden Sie den korrekten Pfad zur Datei mit den Verbindungsinformationen
+// Connect to the database
+include 'connection.php';
 
-// Bewertungen aus der Datenbank abrufen
-$query = "SELECT * FROM faq"; // Annahme: Ihre Tabelle für Bewertungen heißt 'reviews'
+// Retrieve questions from the database
+$query = "SELECT * FROM faq";
 $statement = $con->prepare($query);
 $statement->execute();
 $faq = $statement->fetchAll(PDO::FETCH_ASSOC);
@@ -11,7 +16,7 @@ $faq = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 <!-- HTML und PHP für die Anzeige der Bewertungen -->
 <style>
-  .faqs-box {
+  .faq-box {
     border:  1px solid #ccc; /* Border um die Box */
     padding:  10px; /* Innenabstand */
     margin-bottom:  20px; /* Abstand zwischen den Boxen */

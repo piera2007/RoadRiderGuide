@@ -1,3 +1,8 @@
+<!-- 
+  Author: Piera Blum
+  Date: 21.10.2024
+  Description: This is a site about the company and you can send a reviews and can see reviews.
+ -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -76,7 +81,6 @@
 
       <section>
         <form method="POST" action="process_review.php">
-      <!-- Radio Inputs für die Sternbewertung -->
       <fieldset>
         <legend>Bewertung:</legend>
         <input type="radio" id="rating-input-radio-5" name="rating-input-radio" value="5">
@@ -91,11 +95,9 @@
         <label for="rating-input-radio-1">★☆☆☆☆</label>
       </fieldset>
     
-      <!-- Textarea für die Nachricht -->
       <label for="review_text">Nachricht:</label>
       <textarea id="review_text" name="review_text" rows="4"></textarea>
     
-      <!-- Submit Button -->
       <button type="submit" name="submit_review">Nachricht senden</button>
     </form>
     

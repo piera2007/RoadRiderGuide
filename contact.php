@@ -1,3 +1,8 @@
+<!-- 
+  Author: Piera Blum
+  Date: 21.10.2024
+  Description: This page provides contact information and a form for questions.
+ -->
 <!DOCTYPE html>
 <html lang="de">
   <head>
@@ -91,14 +96,11 @@
 
   <section>
   <form method="POST" action="insert_faq.php">
-<!-- Radio Inputs für die Sternbewertung -->
 
 
-<!-- Textarea für die Nachricht -->
 <label for="question">Haben sie eine Frage?</label>
 <textarea id="question" name="question" rows="4"></textarea>
 
-<!-- Submit Button -->
 <button type="submit" name="submit_review">Frage abschicken</button>
 </form>
 
@@ -107,29 +109,5 @@
     <footer>
       <p>&copy; 2024 Road-Rider-Guide</p>
     </footer>
-    <script>
-      // JavaScript zur Verarbeitung des Formulars
-      document
-        .getElementById("submit-button")
-        .addEventListener("click", function () {
-          var name = document.getElementById("name").value;
-          var email = document.getElementById("email").value;
-          var message = document.getElementById("message").value;
-
-          // Hier kannst du die Validierung und den E-Mail-Versand einrichten
-          if (name && email && message) {
-            alert(
-              "Nachricht gesendet:\nName: " +
-                name +
-                "\nE-Mail: " +
-                email +
-                "\nNachricht: " +
-                message
-            );
-          } else {
-            alert("Bitte füllen Sie alle Felder aus.");
-          }
-        });
-    </script>
   </body>
 </html>

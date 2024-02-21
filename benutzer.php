@@ -1,3 +1,8 @@
+<!-- 
+  Author: Piera Blum
+  Date: 21.10.2024
+  Description: This is a PHP script to see who is logged in or to log out.
+ -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">

@@ -1,8 +1,8 @@
 
 <!-- 
   Author: Piera Blum
-  Date: 20.10.2024
-  This is a website that helps you find the right motorcycle.
+  Date: 21.10.2024
+  Description: This is the homepage for the website.
  -->
 
 <html lang="en">
@@ -43,7 +43,6 @@
       </ul>
     </nav>
     
-    <!-- Rest des Inhalts, z.B. Navigation und Hauptinhalt -->
     <main>
       <section class="welcome-section">
         <h2>Willkommen bei Road-Rider-Guide</h2>

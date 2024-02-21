@@ -1,9 +1,14 @@
+<!-- 
+  Author: Piera Blum
+  Date: 21.10.2024
+  Description: This is a PHP Script that retrieve your reviews from the database.
+ -->
 <?php
-// Verbindung zur Datenbank herstellen
-include 'connection.php'; // Verwenden Sie den korrekten Pfad zur Datei mit den Verbindungsinformationen
+// Connect to the database
+include 'connection.php';
 
-// Bewertungen aus der Datenbank abrufen
-$query = "SELECT * FROM reviews"; // Annahme: Ihre Tabelle für Bewertungen heißt 'reviews'
+// Retrieve reviews from the database
+$query = "SELECT * FROM reviews";
 $statement = $con->prepare($query);
 $statement->execute();
 $reviews = $statement->fetchAll(PDO::FETCH_ASSOC);

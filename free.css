@@ -17,8 +17,8 @@
 nav {
     background-color: #444;
     height: 50px;
-    padding:  0; /* Reduziert den Innenabstand */
-    margin-top: -10px; /* Verschiebt das Element nach oben */
+    padding:  0; 
+    margin-top: -10px; 
 }
 
 nav ul {
@@ -43,8 +43,8 @@ nav ul li a {
     transition: color 0.3s;
     padding-top:  26.5px;
     padding-bottom:  26.5px;
-    line-height:  47px; /* Passen Sie die Zeilenhöhe an */
-    font-size:  20px; /* Erhöht die Schriftgröße auf  20px */
+    line-height:  47px; 
+    font-size:  20px; 
 }
 
 main {
@@ -107,22 +107,17 @@ header h1 {
     background-repeat: no-repeat;
     
 }
-/* Stellen Sie sicher, dass der Container relativ positioniert ist */
 header.fade-in-up {
     position: relative;
   }
-  
-  /* Positionieren Sie das neue Element oben rechts innerhalb des Headers */
   .obere-rechte-ecke {
     position: absolute;
     top:  0;
     right:  50;
-    /* Weitere Stile für das Element, z. B. Farbe, Größe usw. */
   }
   input[type=radio] {
     display: none;
   }
-  
   label {
     background: orange;
     display: inline-block;
@@ -131,7 +126,6 @@ header.fade-in-up {
     margin: 5px;
     width: 20px;
   }
-  
   input:checked + label,
   input:checked ~ input + label {
     background: green;

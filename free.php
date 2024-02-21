@@ -1,5 +1,9 @@
+<!-- 
+  Author: Piera Blum
+  Date: 21.10.2024
+  Description: This is a site where you can make inquiries for a motorcycle.
+ -->
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,19 +35,15 @@
     </ul>
   </nav>
   <main>
-    <!-- ... -->
 <section>
   <h2>Anfrage Stellen</h2>
   <form method="POST" action="free_process.php">
-  <!-- Andere Formularfelder hier -->
+
   <input type="text" name="bike_name" placeholder="Enter bike name" required>
-  <!-- Stellen Sie sicher, dass der Sende-Button den Namen 'submit_review' hat -->
+
   <button type="submit" name="submit_review">Nachricht senden</button>
 </form>
 </section>
-<!-- ... -->
-
-   
   </main>
   <footer>
     <p>&copy; 2024 Road-Rider-Guide</p>

@@ -1,3 +1,8 @@
+<!--
+   Author: Piera Blum
+   Date: 21.02.2024
+   Description: PHP script for register a user.
+-->
 <?php
 require("connection.php");
 
