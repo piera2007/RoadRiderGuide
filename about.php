@@ -39,6 +39,7 @@
       </ul>
     </nav>
     <main>
+    <div class="content-container">
       <section>
         <h2>Über uns</h2>
         <p>
@@ -209,6 +210,7 @@
           </tr>
         </table>
       </section>
+      </div>
     </main>
     <footer>
       <p>&copy; 2024 Road-Rider-Guide</p>

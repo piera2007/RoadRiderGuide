@@ -52,7 +52,6 @@ nav ul li a {
 main {
     padding: 20px;
     background-color: #ffffffcc;
-    text-align: center;
 }
 
 footer {
@@ -108,7 +107,6 @@ header h1 {
     background-position: center center; 
     background-attachment: fixed; 
     background-repeat: no-repeat;
-    text-align: center;
     
 }
 /* Stellen Sie sicher, dass der Container relativ positioniert ist */
@@ -131,11 +129,7 @@ header.fade-in-up {
     border-radius:  5px; /* Abrundung der Ecken */
     box-shadow:  0  2px  4px rgba(0,  0,  0,  0.1); /* Schatten */
   }
-  .content-container {
-    max-width:  80%; /* oder eine andere Breite, die Sie bevorzugen */
-    margin:  0 auto; /* Zentriert den Inhalt horizontal */
-    padding:  0  20px; /* Fügt ein wenig Abstand auf beiden Seiten hinzu */
-  }
+
   
   
   

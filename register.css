@@ -11,7 +11,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(#33383f, rgb(42,47,53));
+    background: radial-gradient(#73abac, rgb(19, 64, 65));
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -24,7 +24,7 @@ form{height: 575px;
     width: 500px;
     padding: 40px;
     border-radius: 8px;
-    background-color: #222831;
+    background-color: #222d31;
     box-shadow: 4px 4px 1px rgba(0,0,0,0,404);
 
     display: flex;
@@ -33,7 +33,7 @@ form{height: 575px;
     align-items: center;
 }
 h1{
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 38px;
 
@@ -56,18 +56,18 @@ input{
     padding: 0px 25px;
     border-radius: 10px;
     border: none;
-    background-color: #373e49;
+    background-color: #40444a;
     box-shadow: 3px 3px 6px rgba(0,0,0,0,212);
     color: white;
     font-size: 20px;
     transition: 0.2s;
 }
 input:hover{
-    background-color: #47505f;
+    background: linear-gradient(to right, rgb(47, 140, 52), rgb(60, 62, 135));
 }
 input:focus{
     outline: none;
-    background-color: #47505f;
+    background-color: #434c58;
     width: 265px;
 }
 input::placeholder{
@@ -105,4 +105,8 @@ button:focus{
     h1{
         font-size: 32px;
     }
+}
+.username {
+    color: white; /* Setzt die Textfarbe auf Weiß */
+    font-size:  24px; /* Erhöhen Sie die Schriftgröße auf den gewünschten Wert */
 }

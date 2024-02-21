@@ -14,10 +14,11 @@
 <body>
     <form action="index.php" method="POST">
         <h1>Benutzer & Logout</h1>
-        <?php 
+        <?php  
         session_start();
-        echo $_SESSION["username"];
+        echo '<span class="username">' . $_SESSION["username"] . '</span>';
         ?>
+
         </div>
         <form action="logout.php" method="post">
             <input type="submit" value="Logout" name="logoutButton" />
